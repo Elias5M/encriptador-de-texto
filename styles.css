@@ -6,6 +6,7 @@
 
 header{
     background-color: #EDF2FF;
+    height: 10vh;
 }
 
 .logo-compania{
@@ -14,13 +15,13 @@ header{
     align-items: center;
     justify-content: center;
     margin: 0 auto;
-    height: 10vh;
-    top: 1vh;
+    height: 80%;
+    top: 20%;
     transition: transform 0.3s;
 }
 
 .logo-compania:hover{
-    transform: scale(1.3);
+    transform: scale(1.15);
 }
 
 .container{
