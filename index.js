@@ -49,3 +49,19 @@ function desencriptar(){
         Swal.fire("Opps!", "Debes ingresar un texto", "warning");
         }
 }
+
+function copiar() {
+
+    const textarea = document.getElementById("texto");
+  
+    textarea.select();
+    document.execCommand("copy");
+    window.getSelection().removeAllRanges();
+
+    const boton = document.getElementById("btn-copiar");
+    boton.textContent = "¡Copiado!";
+  
+    setTimeout(() => {
+      boton.textContent = "Copiar";
+    }, 1000);
+  }
